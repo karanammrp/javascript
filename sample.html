@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascripttesting</title>
+    <script>
+        function display()
+        {
+            document.getElementById("display").innerHTML= "script included in header"     
+           }
+    </script>
+</head>
+<body>
+    <h1 >change the html content</h1>
+    <h2 id="hcontent">hello guest</h2>
+    <h3>welcome to java script</h3>
+    <button type="button" onclick='document.getElementById("hcontent").innerHTML="hello raviprakash"'>raviprakash</button>
+    <h1>changeing attributes </h1>
+    <img id="image" src="treeimage.jpg" width="100px" height="100px" alt="treeimage">
+    <button type="button" onclick='document.getElementById("image").src="twitter.png"'>twitter</button>
+    <h1 id="text">java script on  css</h1>
+    <button type="button" onclick='document.getElementById("text").style.color="red"'>red</button>
+    <h1 id="display">demo on javascripttesting</h1>
+    <button type="button" onclick="display()">display</button>
+
+    <!--this is example of jscript in body tag-->
+
+    <h1 id="display1">demo on javascripttesting 123</h1>
+    <script>
+        function display1()
+        {
+            document.getElementById("display1").innerHTML= "script included in body"     
+           }
+    </script>
+        <button type="button" onclick="display1()">display1</button>
+<script src="external.js">
+
+</script>
+<h1 id="display2">demo on javascripttesting 2</h1>
+<button type="button" onclick="display2()">display</button>
+
+<!-- out put in js -->
+<h1 id="abc"></h1>
+<button type="button" onclick='document.getElementById("abc").innerHTML="demo on innerHTML"'>click me</button>
+<br>
+<script>
+    document.write("welcome to write function")
+    window.alert("welcome to java script")
+    console.log("it is used to debug")
+</script>
+<button type="button" onclick='print()'>print me</button>
+
+
+
+
+
+</body>
+</html>

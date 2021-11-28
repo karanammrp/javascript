@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+    <style>
+        #res {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<script>
+    function age()
+
+    {
+        if (document.getElementById("t1").value>=18)
+        {
+            window.alert('elegible for vote ');
+
+        }
+        else
+        {
+            window.alert('not elegible for voting ')
+        }
+    }
+    function rela()
+    {
+        if (document.getElementById("t2").value==document.getElementById("t3").value)
+        {
+            document.getElementById("res").innerHTML="both numbers are equal";
+        }
+        else if (document.getElementById("t2").value>document.getElementById("t3").value)
+        {
+            document.getElementById("res").innerHTML="first numbers is greater";
+
+        }
+        else
+        {
+            document.getElementById("res").innerHTML="second numbers is greater";
+
+        }
+
+    }
+
+    
+</script>
+<body>
+    <h1> enter the age:<input type="text" id="t1"></h1><br>
+    <button type="button" onclick="age()">verify</button>
+   
+
+    <h1> enter the first number:<input type="text" id="t2"></h1><br>
+    <h1> enter the second number:<input type="text" id="t3"></h1><br>
+    <button type="button" onclick="rela()">relation</button>
+    <div id="res"></div>
+
+
+    
+</body>
+</html>

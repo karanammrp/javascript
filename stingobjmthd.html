@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string objects methods</title>
+</head>
+<body>
+    <h1>string and string objects and methods</h1>
+    <script>
+        var s1="strings in java script"
+        document.writeln(s1,"<br>");
+        var s2='strings under single string "java script"'
+        document.writeln(s2,"<br>");
+        document.writeln(typeof s2,"<br>");
+
+        var s3=new String("this is string object")
+        document.writeln(s3,"<br>");
+        document.writeln(typeof s3,'<br>');
+        document.writeln('<h1>string methods</h1><br>');
+        document.writeln("s1=",s1,"<br>","s2=",s2,"<br>","s3=",s3,"<br>")
+        document.writeln('indexOf() - position of n in s1 is  ',s1.indexOf("n"),'<br>');
+        document.writeln('lastindexOf() - lastposition of n in s1 is  ',s1.lastIndexOf("n"),'<br>');
+        document.writeln('indexOf()with one argument - position of n in s1 is  ',s1.indexOf("n",6),'<br>');
+        document.writeln("serch() n in s1 - ",s1.search("n"),"<br>")
+        document.writeln("slice() extracting from s1 - ",s1.slice(0,10),"<br>")
+        document.writeln("slice() extracting from s1 with negative index - ",s1.slice(-25),"<br>")
+        document.writeln("substring()-extracting from s1 - ",s1.substring(0,10),"<br>");
+        document.writeln("replace()-extracting from s1 - ",s1.replace("java script","js"),"<br>");
+        var s4="welcome to india"
+        var s5=s4.toUpperCase();
+        document.writeln("to upper case - ",s5,"<br>");
+        var s6="hello"
+        document.writeln(s6.concat(s5),"<br>");
+        var s7="  java script     "
+
+        document.writeln("length of s7 is -  ",s7.length,"<br>");
+        var s8=s7.trim();
+        document.writeln("length of s8 is -  ",s8.length,"<br>");
+        document.writeln("string of s8 is -  ",s8,"<br>");
+        document.writeln("string of s7 is -  ",s7,"<br>");
+        document.writeln("charAt() of s7 is -  ",s7.charAt(1),"<br>");
+        document.writeln("charCodeAt() of s7 is -  ",s7.charCodeAt(1),"<br>");
+        for(i=0;i<s8.length;i++)
+        {
+            document.writeln(s8[i]+"<br>");
+        }
+
+
+        
+
+        </script>
+</body>
+</html>
